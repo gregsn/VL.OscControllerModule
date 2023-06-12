@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QDE2VaESqH3PeBxM1BqbSj" LanguageVersion="2023.5.3-0001-gb649803a1e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="QDE2VaESqH3PeBxM1BqbSj" LanguageVersion="2023.5.3-0002-g9acdc372e8" Version="0.128">
   <NugetDependency Id="KLPlcUvOfFSN6vFhs4WAWQ" Location="VL.CoreLib" Version="2023.5.3-0001-gb649803a1e" />
   <Patch Id="LFtYl9PMcn6Peb2SGe60Xa">
     <Canvas Id="JquuijjE0NkMMH2FWUSECI" DefaultCategory="Main" CanvasType="FullCategory">
@@ -59,7 +59,7 @@
             </Pad>
             <ControlPoint Id="JAOGUcDc14XNR5VjOlCjva" Bounds="383,687" />
             <Node Bounds="381,637,157,26" Id="JpyQsogXnJ1PIWOqSADimc">
-              <p:NodeReference LastCategoryFullName="Main.AddOscControllerModuleBindingDialog" LastDependency="OscControllerModule.HDE.vl">
+              <p:NodeReference LastCategoryFullName="Main.AddOscControllerModuleBindingDialog" LastDependency="VL.OscControllerModule.HDE.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="AddOscControllerModuleBindingDialog" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -118,7 +118,7 @@
                 <Patch Id="C1fON8r8dFOOVwCkry6Ogi" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="AnQMrfLQ3WJLlXFVyLDmBJ" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="246,1095,94,26" Id="E692JMGIWttO8TN9BiGAMP">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerBinding" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerBinding" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OscControllerBinding" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Model" />
@@ -140,7 +140,7 @@
               </Patch>
             </Node>
             <Node Bounds="360,939,94,26" Id="IxL8C9I6jRQMp4pUfVAZ7i">
-              <p:NodeReference LastCategoryFullName="Main.OscControllerModule" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OscControllerModule" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OscControllerModule" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="ModelStream" />
@@ -181,7 +181,7 @@
               <Pin Id="MLvhHj2e8c9QOkz0H7xQTe" Name="Value" Kind="OutputPin" />
             </Node>
             <Node Bounds="510,1173,116,26" Id="U7yOFMBkVujNtkN29RbAV7">
-              <p:NodeReference LastCategoryFullName="Main.OscControllerBindingModel" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OscControllerBindingModel" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="OscControllerBindingModel" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -198,7 +198,7 @@
             <ControlPoint Id="NjTIzrm8ORSNEfw3Rj235R" Bounds="549,1101" />
             <ControlPoint Id="Hw9gJHOaI0kNUNXJkHtgwd" Bounds="965,1028" />
             <Node Bounds="963,1099,94,26" Id="Aeh9SOQDYwfMEWDQxiUhNW">
-              <p:NodeReference LastCategoryFullName="Main.OscControllerBinding" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OscControllerBinding" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OscControllerBinding" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Model" />
@@ -226,7 +226,7 @@
               <Pin Id="DAy7HUDbo8IMSrZufsuVzm" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="780,1076,94,26" Id="A6W0N92D8SaPdtea6KxERE">
-              <p:NodeReference LastCategoryFullName="Main.OscControllerModule" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OscControllerModule" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OscControllerModule" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="ModelStream" />
@@ -380,11 +380,13 @@
               <ControlPoint Id="PSd3c571x6LPi6HwXljIJW" Bounds="330,392" Name="Binding Type" Alignment="Top" />
               <ControlPoint Id="QpNtdgzBOuGMlRhPkoYJ7q" Bounds="446,468" Name="Address" Alignment="Bottom" />
               <ControlPoint Id="VRBB1ZPM7l9NjQsiQxLLAX" Bounds="619,392" Name="Address" Alignment="Top" />
+              <ControlPoint Id="CqwAued0a9wM3jIscHbJqT" Bounds="520,468" Name="Is Custom Type" Alignment="Bottom" />
+              <ControlPoint Id="LS8qA1VZxbKOoEzXDCLkkt" Bounds="520,392" Name="Is Custom Type" Alignment="Top" />
               <Patch Id="GsidR6vHhXAP8IFCM1WrUS" ManuallySortedPins="true">
                 <Patch Id="LqKxIt7RGyJLeD31PK1ciF" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="OilzP2L28P3PYYppdlkri0" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="296,416,227,26" Id="LjiC1Dy3T8xPR0ZYaJSrSU">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerBinding" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerBinding" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OscControllerBinding" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -396,8 +398,6 @@
                   <Pin Id="EgpkdqeMzlEPVWBh8qg7jt" Name="Is Custom Type" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="CqwAued0a9wM3jIscHbJqT" Bounds="520,468" Name="Is Custom Type" Alignment="Bottom" />
-              <ControlPoint Id="LS8qA1VZxbKOoEzXDCLkkt" Bounds="520,392" Name="Is Custom Type" Alignment="Top" />
             </Node>
             <Node Bounds="284,293,65,19" Id="L2g5Q9WSy9EPxmY6GbV1uD">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -469,7 +469,7 @@
                   <Pin Id="SuKvy2811lrMHDD1JwdWL1" Name="Functionality" Kind="OutputPin" />
                   <Patch Id="Qnj31JEsVKFNrJlhtvEdoi" ManuallySortedPins="true">
                     <Node Bounds="364,1518,423,26" Id="HB02foxMIPbLO9SmJk0fVY">
-                      <p:NodeReference LastCategoryFullName="Main.OscControllerModuleView" LastDependency="OscControllerModule.HDE.vl">
+                      <p:NodeReference LastCategoryFullName="Main.OscControllerModuleView" LastDependency="VL.OscControllerModule.HDE.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="AddOrEdit" />
                       </p:NodeReference>
@@ -683,9 +683,28 @@
           <Link Id="IYloKxD5hYwLJsKoSO8TEX" Ids="PI8KudL0kPjPbTANcEgrOA,PHnKs1TTYk9PFZloRWegCF" />
           <Link Id="J1ihLB9jrDHNsp0pvoBBgw" Ids="UcenOn6n1QTPCy34ZHtXGa,GrudiHJCdh6L3bDTZuOYC1" />
           <Link Id="TH2Tg4VRbz4QJWn6OOV9Yh" Ids="IImbKYfPI8gOcCXTu5ZOdU,UcenOn6n1QTPCy34ZHtXGa" IsHidden="true" />
+          <Link Id="T88LkeSQiq0PowtKwOayCg" Ids="LS8qA1VZxbKOoEzXDCLkkt,CqwAued0a9wM3jIscHbJqT" IsFeedback="true" />
+          <Link Id="NQrBgMChzOHOcvKAYpgzCG" Ids="EgpkdqeMzlEPVWBh8qg7jt,CqwAued0a9wM3jIscHbJqT" />
+          <Slot Id="Bu3nuozdh70OjrALOiNqI8" Name="Is Custom Type" />
+          <Link Id="MEmj8VESqxqPDfPAc2NAhW" Ids="CqwAued0a9wM3jIscHbJqT,VAp75mVljGhPT1AIDoJcyP" />
+          <Link Id="ApEz56zdrohMWbvjSHwoI2" Ids="NTTA0Urt9rpMaoGMszFLY5,NgNBVZ52AX6OaRwG9iSOWR" />
+          <Link Id="KDgeqxKGfc4Mqg2xQm3ZTx" Ids="MJqUrvIzQNVPMFGCVti5fk,Ub0mzKQoymRLxUHjLAuxnQ" />
+          <Link Id="IQqoRXYNnyWMR0khrAAIdb" Ids="Lv5Gan6fC1hMhcUShsmelO,BEUpM6boqMPOvqBzOLoptA" />
+          <Link Id="N5mQldpU8HbOQwd9pgnXPS" Ids="IbyuTVAqx4ePJISan58CZg,F9dj10Y30rILo6kxEQB8zj" />
+          <Link Id="JTEmEOlBcV5QQTATf1wPc1" Ids="MJqUrvIzQNVPMFGCVti5fk,I5Tij0HQev5QGelqlb63WY" />
+          <Link Id="OQpvoBFmLnwMoNMPahXKMc" Ids="C8BfE8f8LU1NAFGRU2VQUb,IxoXze4YOkRMpOkTAH5kIi" IsFeedback="true" />
+          <Link Id="F0XfJvbQurXMp3OvyJSuxl" Ids="I6uh5pR0UQDO6nuONh62GG,C8BfE8f8LU1NAFGRU2VQUb" />
+          <Link Id="GNpRfKSRO7yMYItQJOVAMy" Ids="IxoXze4YOkRMpOkTAH5kIi,RzwJVWrC9LLOOxCW9eXZrL" />
+          <Link Id="Cup6LOuWkKYQSHThZmyA40" Ids="MJqUrvIzQNVPMFGCVti5fk,V0fiswIvlPRNqwilTvtxmi" />
+          <Link Id="LJo1sF7o0uLOwBu8siSnoX" Ids="V0JlavT7y59PdWvQipd8lo,RDP6giQkiVPOLBnAjZVeYL" />
+          <Link Id="RD4oJUmvxkeNn7qCfZFyPt" Ids="L5BWRcL0BetLwsrgYMV9h8,CnhSGDbRlSMMhxHd4d7KLq" />
+          <Link Id="NvGpAso2bAKM1rjI62q6PY" Ids="HV41aZJi61sL7nZCsMtcPN,DeOX11hUNfFLWL7qEA8h5m" />
+          <Link Id="UE3iYp19EQTL4UpQWb1YXq" Ids="GIqU7Wn8qpePoQWu6pxNpU,Fay3bYcvmqBOJY5XnklZhj" />
+          <Link Id="RBaIadk4aCJOPnW2nf2uDh" Ids="OVlFfVbVDrvPIavzcXujtu,OUkhaTl1eOgPlcc6gIWLOv" />
+          <Link Id="DC83CorXPQ6NeuUORcvpZ5" Ids="OUkhaTl1eOgPlcc6gIWLOv,MCzT9EieKXkLdIXqpCY0Q9" />
           <Patch Id="TfTBHfGvUoEOMCKMGK0oUm" Name="Create">
             <Pin Id="BcJ13YiYdZjPERuO0W0ZHy" Name="Initial Binding" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="TypeFlag" Name="OscControllerBinding" />
               </p:TypeAnnotation>
             </Pin>
@@ -720,25 +739,6 @@
           <Patch Id="RCgxMhYir9KOSog0RWiiiZ" Name="Set" ParticipatingElements="J1ihLB9jrDHNsp0pvoBBgw">
             <Pin Id="IImbKYfPI8gOcCXTu5ZOdU" Name="Address" Kind="InputPin" />
           </Patch>
-          <Link Id="T88LkeSQiq0PowtKwOayCg" Ids="LS8qA1VZxbKOoEzXDCLkkt,CqwAued0a9wM3jIscHbJqT" IsFeedback="true" />
-          <Link Id="NQrBgMChzOHOcvKAYpgzCG" Ids="EgpkdqeMzlEPVWBh8qg7jt,CqwAued0a9wM3jIscHbJqT" />
-          <Slot Id="Bu3nuozdh70OjrALOiNqI8" Name="Is Custom Type" />
-          <Link Id="MEmj8VESqxqPDfPAc2NAhW" Ids="CqwAued0a9wM3jIscHbJqT,VAp75mVljGhPT1AIDoJcyP" />
-          <Link Id="ApEz56zdrohMWbvjSHwoI2" Ids="NTTA0Urt9rpMaoGMszFLY5,NgNBVZ52AX6OaRwG9iSOWR" />
-          <Link Id="KDgeqxKGfc4Mqg2xQm3ZTx" Ids="MJqUrvIzQNVPMFGCVti5fk,Ub0mzKQoymRLxUHjLAuxnQ" />
-          <Link Id="IQqoRXYNnyWMR0khrAAIdb" Ids="Lv5Gan6fC1hMhcUShsmelO,BEUpM6boqMPOvqBzOLoptA" />
-          <Link Id="N5mQldpU8HbOQwd9pgnXPS" Ids="IbyuTVAqx4ePJISan58CZg,F9dj10Y30rILo6kxEQB8zj" />
-          <Link Id="JTEmEOlBcV5QQTATf1wPc1" Ids="MJqUrvIzQNVPMFGCVti5fk,I5Tij0HQev5QGelqlb63WY" />
-          <Link Id="OQpvoBFmLnwMoNMPahXKMc" Ids="C8BfE8f8LU1NAFGRU2VQUb,IxoXze4YOkRMpOkTAH5kIi" IsFeedback="true" />
-          <Link Id="F0XfJvbQurXMp3OvyJSuxl" Ids="I6uh5pR0UQDO6nuONh62GG,C8BfE8f8LU1NAFGRU2VQUb" />
-          <Link Id="GNpRfKSRO7yMYItQJOVAMy" Ids="IxoXze4YOkRMpOkTAH5kIi,RzwJVWrC9LLOOxCW9eXZrL" />
-          <Link Id="Cup6LOuWkKYQSHThZmyA40" Ids="MJqUrvIzQNVPMFGCVti5fk,V0fiswIvlPRNqwilTvtxmi" />
-          <Link Id="LJo1sF7o0uLOwBu8siSnoX" Ids="V0JlavT7y59PdWvQipd8lo,RDP6giQkiVPOLBnAjZVeYL" />
-          <Link Id="RD4oJUmvxkeNn7qCfZFyPt" Ids="L5BWRcL0BetLwsrgYMV9h8,CnhSGDbRlSMMhxHd4d7KLq" />
-          <Link Id="NvGpAso2bAKM1rjI62q6PY" Ids="HV41aZJi61sL7nZCsMtcPN,DeOX11hUNfFLWL7qEA8h5m" />
-          <Link Id="UE3iYp19EQTL4UpQWb1YXq" Ids="GIqU7Wn8qpePoQWu6pxNpU,Fay3bYcvmqBOJY5XnklZhj" />
-          <Link Id="RBaIadk4aCJOPnW2nf2uDh" Ids="OVlFfVbVDrvPIavzcXujtu,OUkhaTl1eOgPlcc6gIWLOv" />
-          <Link Id="DC83CorXPQ6NeuUORcvpZ5" Ids="OUkhaTl1eOgPlcc6gIWLOv,MCzT9EieKXkLdIXqpCY0Q9" />
         </Patch>
       </Node>
       <!--
@@ -772,7 +772,7 @@
                 </p:TypeAnnotation>
               </Pin>
               <Node Bounds="312,544,110,26" Id="HNySgOrTh3gP7OOKP97s0F">
-                <p:NodeReference LastCategoryFullName="Main.OscControllerModuleView" LastDependency="OscControllerModule.HDE.vl">
+                <p:NodeReference LastCategoryFullName="Main.OscControllerModuleView" LastDependency="VL.OscControllerModule.HDE.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="OscControllerModuleView" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -811,8 +811,6 @@
       </Patch>
     </Node>
   </Patch>
-  <DocumentDependency Id="PDQhAgIp20kL1vZWPgofgv" Location="./OscControllerModule.vl" />
-  <DocumentDependency Id="MRfJW1cZyuGNVdDGTXVgpH" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0001-gb649803a1e/packs/VL.IO.Midi/MIDIControllerModule.vl" />
-  <NugetDependency Id="OV6Hacoo0boQT83KobXNqs" Location="VL.IO.Midi" Version="1.0.9" />
+  <DocumentDependency Id="PDQhAgIp20kL1vZWPgofgv" Location="./VL.OscControllerModule.vl" IsFriend="true" />
   <NugetDependency Id="GYspvu5Fdo3PipI3uelj2d" Location="VL.ImGui" Version="2023.5.3-0001-gb649803a1e" />
 </Document>

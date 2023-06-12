@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DwJhbw8lgcoNXzCYrjHvkD" LanguageVersion="2023.5.3-0001-gb649803a1e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="DwJhbw8lgcoNXzCYrjHvkD" LanguageVersion="2023.5.3-0002-g9acdc372e8" Version="0.128">
   <NugetDependency Id="Ff92T6bM7vjMokqYCxjUK2" Location="VL.CoreLib" Version="2023.5.3-0001-gb649803a1e" />
   <Patch Id="TGANGHh11xPOHkt3J7THAm">
     <Canvas Id="PL3LE1cgPmzP57H69runDN" DefaultCategory="Main" CanvasType="FullCategory">
@@ -407,12 +407,12 @@
       <Patch Id="E1W6qhrtGnaN2KTEwl9zQC">
         <Canvas Id="JKp9TS3djFALpSX6LbcNYO" CanvasType="Group">
           <Node Bounds="188,157,112,19" Id="Qzqdzri7jOpLaqEc6ZFPlh">
-            <p:NodeReference LastCategoryFullName="IO" LastDependency="OscControllerModule.vl">
+            <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OscControllerModule" />
             </p:NodeReference>
             <Pin Id="KXZhwpctJzVNdefEcR4gD7" Name="Model" Kind="InputPin">
-              <p:DefaultValue r:Type="Spread [Collections]&lt;OscControllerBindingModel [IO]&gt;" xmlns:r="reflection" r:Version="2">
+              <p:DefaultValue>
                 <Item Address="/someText" Binding_Type="Receive" Channel_Path="Slogan" />
                 <Item Binding_Type="Receive" Channel_Path="Rockstar" Is_Primitive="True" />
                 <Item Address="/someValue" Binding_Type="Receive" Channel_Path="Noise" />
@@ -635,4 +635,5 @@
   </Patch>
   <NugetDependency Id="QZhkd6fZ5mILQwMPy3j04C" Location="VL.IO.OSC" Version="1.0.19" />
   <DocumentDependency Id="L6HhfvBaMvRQa99gGG0R9e" Location="../OscControllerModule.vl" />
+  <NugetDependency Id="LqjvheiKZhSPM5tlktfy6i" Location="VL.OscControllerModule" Version="0.0.0" />
 </Document>
